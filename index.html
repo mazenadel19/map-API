@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MapAPI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="up">
+            <div class="container">
+                <span onclick="getLocation()" >Display Map</span>
+                <span onclick="getLocation()">Detailed Information</span>
+            </div>
+        </div>
+        <div id="down">
+            <section id="mapSection" class="displaynone">Map Section</section>
+            <section id="information" class="displaynone">
+
+                <label for="latitude">latitude (degree)</label>
+                <input type="text" name="latitude" id="latitudeInp" >
+
+                <label for="longitude">longitude (degree)</label>
+                <input type="text" name="longitude" id="longitudeInp" readonly>
+
+                <label for="longitude">Accuracy</label>
+                <input type="text" name="Accuracy" id="AccuracyInp" readonly>
+
+                <label for="longitude">TimeStamp (Current Time and Date)</label>
+                <input type="text" name="TimeStamp" id="TimeStampInp" readonly>
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>

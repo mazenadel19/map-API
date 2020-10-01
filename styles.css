@@ -1,0 +1,133 @@
+/* ***************** Global *****************  */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div{
+    border-radius: 25px;
+    background: radial-gradient(
+    circle,
+    rgba(255, 111, 0, 0.5) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 111, 0, 0.5) 100%
+);
+
+}
+
+#container {
+	/* background: radial-gradient(
+		circle,
+		rgba(255, 111, 0, 0.5) 0%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 111, 0, 0.5) 100%
+	); */
+	border: 2px solid;
+	height: 400px;
+	margin: 50px auto;
+	padding: 10px;
+	width: 70%;
+}
+
+#up,#down {
+    border: 2px solid;
+    background: radial-gradient(
+		circle,
+		rgba(255, 154, 0, 0.3) 0%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 154, 0, 0.3) 100%
+    );
+    /* background-color:rgb(255, 154, 0) */
+	margin: 30px auto;
+    width: 95%;
+    padding: 15px;
+}
+
+/* ***************** Up *****************  */
+
+#up{
+    height: 60px;
+}
+
+#up .container{
+    background: radial-gradient( circle, transparent 0%, transparent 50%, transparent 100% );
+    text-align: center;
+    margin-top: 20px;
+}
+
+#up span{
+    background: linear-gradient(aqua,blue,blue);
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+    transition: all 1s;
+
+}
+
+#up span:hover{
+    color: red;
+    transform: scale(2) skew(15deg);
+}
+#up span:active{
+    border-top: 2px solid blue;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
+
+/* ***************** down *****************  */
+#down{
+    height: 200px;
+
+}
+#mapSection{
+width: 98%;
+height: 98%;
+border: 2px solid purple;
+border-radius: 25px;
+box-shadow: 6px 4px 15px 5px #6eceee;
+}
+
+.displaynone{
+    display: none;
+}
+
+.displayed{
+    display: block;
+}
+
+#information{
+background: radial-gradient(
+        circle,
+        lightgreen 0%,
+		yellowgreen 50%,
+		blue 100%
+    );
+border: 2px solid;
+margin: 10px auto;
+padding: 10px;
+text-align: center;
+width: 50%;
+}
+
+#information:hover{
+    background: radial-gradient(
+        ellipse,
+        lightblue 0%,
+		lightblue 50%,
+		blue 100%
+    );
+}
+
+#information label{
+    display: block;
+}
+
+#information input{
+    width: 40%;
+    background-color: lightblue;
+}
